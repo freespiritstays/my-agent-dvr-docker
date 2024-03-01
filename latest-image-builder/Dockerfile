@@ -1,7 +1,7 @@
 # Use DEBIAN BOOKWORM-SLIM
 FROM debian:bookworm-slim
 ARG DEBIAN_FRONTEND=noninteractive 
-ARG TZ=Asia/Dhaka
+ARG TZ=America/Mexico_City
 RUN mkdir /AgentDVR
 COPY --chmod=555 dependency.sh /AgentDVR
 COPY --chmod=555 setup.sh /AgentDVR
